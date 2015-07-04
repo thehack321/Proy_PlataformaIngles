@@ -2,43 +2,288 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <title>Plataforma de Ingles</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <style>
+        body {
+            padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+        }
+    </style>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="~/css/bootstrap.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/css/flexslider.css" rel="stylesheet">
+
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", null, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+                </a>
+                <a class="brand" href="index.html"><img src="~/img/logosmall.png" alt="MAXIMUM"></a>
+                <div class="nav">
+                    <ul class="nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="about.html">About Page Ver. 1</a></li>
+                                <li><a href="about2.html">About Page Ver. 2</a></li>
+                                <li><a href="about3.html">About Page Ver. 3</a></li>
+                                <li class="divider"></li>
+                                <li><a href="team.html">Team Page Ver. 1</a></li>
+                                <li><a href="team2.html">Team Page Ver. 2</a></li>
+                                <li><a href="team3.html">Team Page Ver. 3</a></li>
+                                <li><a href="team4.html">Single Team Member</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="services.html">Services Page</a></li>
+                                <li><a href="services2.html">Services Page w/Sidebar</a></li>
+                                <li><a href="services3.html">Services Page Variation</a></li>
+                                <li><a href="services4.html">Services Page w/Carousel</a></li>
+                                <li class="divider"></li>
+                                <li><a href="pricingtable.html">Pricing Tables Ver. 1</a></li>
+                                <li><a href="pricingtable2.html">Pricing Tables Ver. 2</a></li>
+                                <li><a href="pricingtable3.html">Pricing Tables Ver. 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Clients <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="clients.html">Clients Page</a></li>
+                                <li><a href="clients2.html">Clients Page Variation</a></li>
+                                <li class="divider"></li>
+                                <li><a href="testimonials.html">Testimonials Page</a></li>
+                                <li><a href="testimonials2.html">Testimonial Page Variation</a></li>
+                                <li class="divider"></li>
+                                <li><a href="career.html">Careers Page</a></li>
+                                <li><a href="career2.html">Career Details Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Useful <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="faq.html">FAQ Page</a></li>
+                                <li><a href="features.html">Features Page</a></li>
+                                <li><a href="skills.html">Skills Page</a></li>
+                                <li><a href="fullwidth.html">Full Width Page</a></li>
+                                <li><a href="mediumfooter.html">Footer Variation</a></li>
+                                <li><a href="bigfooter.html">Large Footer Version</a></li>
+                                <li><a href="sitemap.html">Sitemap Page</a></li>
+                                <li><a href="timeline.html">Timeline Page</a></li>
+                                <li><a href="login.html">Login Page</a></li>
+                                <li><a href="login2.html">Login Page Variation</a></li>
+                                <li><a href="register.html">Register Page</a></li>
+                                <li><a href="404.html">404 Error Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Special <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="landing.html">Landing Page</a></li>
+                                <li><a href="landing2.html">Landing Page Variation</a></li>
+                                <li><a href="comingsoon.html">Coming Soon Page</a></li>
+                                <li><a href="comingsoon2.html">Coming Soon w/Countdown</a></li>
+                                <li><a href="onepage.html">One Page Theme</a></li>
+                                <li><a href="vcard.html">Vcard Page</a></li>
+                                <li><a href="resume.html">Resume Page</a></li>
+                                <li><a href="event.html">Event Page</a></li>
+                                <li><a href="dribbble.html">Dribbble Shots Widget</a></li>
+                                <li><a href="pinterest.html">Pinterest Widget</a></li>
+                                <li><a href="instagram.html">Instagram Widget</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolios <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="portfolio.html">Basic Portfolio Page</a></li>
+                                <li><a href="portfolio2.html">2 Columns Portfolio</a></li>
+                                <li><a href="portfolio3.html">3 Columns Portfolio</a></li>
+                                <li><a href="portfolio4.html">4 Columns Portfolio</a></li>
+                                <li><a href="portfolio5.html">3 Columns Circle Items</a></li>
+                                <li><a href="portfolio6.html">4 Columns Circle Items</a></li>
+                                <li><a href="portfolio7.html">Portfolio Triangle Variation</a></li>
+                                <li><a href="portfolio8.html">Portfolio Hexagon Variation</a></li>
+                                <li><a href="portfolio10.html">Single Item</a></li>
+                                <li><a href="portfolio11.html">Single Item Right Sidebar</a></li>
+                                <li><a href="portfolio12.html">Single Item left Sidebar</a></li>
+                                <li><a href="portfolio13.html">Single Item 2 Sidebars</a></li>
+                                <li><a href="portfolio14.html">Single Video Item</a></li>
+                                <li><a href="portfolio15.html">Single Video Item Variation</a></li>
+                                <li class="divider"></li>
+                                <li><a href="case.html">Case of Study</a></li>
+                                <li><a href="case2.html">Case of Study Variation</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog.html">Blog Classic</a></li>
+                                <li><a href="blog2.html">Blog Variation</a></li>
+                                <li><a href="blog3.html">Blog Variation 2</a></li>
+                                <li><a href="blog4.html">Blog Variation 3</a></li>
+                                <li><a href="blog5.html">Single Post Right Sidebar</a></li>
+                                <li><a href="blog6.html">Single Post Left Sidebar</a></li>
+                                <li><a href="blog7.html">Single Post Double Sidebar</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="contact.html">Contact Page</a></li>
+                                <li><a href="contact2.html">Contact Page w/Map</a></li>
+                                <li><a href="contact3.html">Contact Page Map Variation</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    <section id="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="~/img/bg01.jpg" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                <div class="rightline">
+                    <h2>OUR MISSION</h2>
+                    <p>Maximum mission is to deliver the highest quality web design and development based on a fresh approach to customer service and value for money.</p>
+                    <p>We strive to offer a full suite of web based services inhouse and keep abreast of the latest technologies to ensure our customers are kept up to date on the latest internet based trends.</p>
+                </div>
+            </div>
+            <div class="span6">
+                <h2>OUR PASSION</h2>
+                <p>Maximum are passionate about what we do, we stand by our work and your investment by ensuring that only our best, most qualified developers maintain it.</p>
+                <p>It is a common occurrence for a new site to be built and then quickly handed over to a support team and forgotten about. We are an exception, our customers are our most valuable advertisements, we stand by them!</p>
+            </div>
+            @RenderBody()
+        </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="middle">
+                <h2>WE SPECIALIZE IN</h2>
+                <br>
+                <div class="span3">
+                    <img src="~/img/service01.png" alt="">
+                    <br>
+                    <br>
+                    <p><strong>Web Design</strong>: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
+                </div>
+                <div class="span3">
+                    <img src="~/img/service02.png" alt="">
+                    <br>
+                    <br>
+                    <p><strong>Integration</strong>: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
+                </div>
+                <div class="span3">
+                    <img src="~/img/service03.png" alt="">
+                    <br>
+                    <br>
+                    <p><strong>Marketing</strong>: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
+                </div>
+                <div class="span3">
+                    <img src="~/img/service04.png" alt="">
+                    <br>
+                    <br>
+                    <p><strong>Development</strong>: Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took...</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div id="blackwrap">
+        <div class="container">
+            <h1>We Have Clients All Around The World</h1>
+            <p>No matter where you are or which are your requirments; Maximum have all what you need to create, design and develope your website.</p>
+            <img src="~/img/globe.png" alt="">
+        </div>
+    </div>
+    <div class="container hidden-phone">
+        <div class="row">
+            <div class="clients">
+                <br>
+                <div class="span12">
+                    <img src="~/img/client-logos.png" alt="">
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <br>
+            <br>
+            <div class="span4">
+                <div class="oneBox"> <img src="~/img/pic1.jpg" alt=""> <strong>Lisa Taylor</strong> <em>Google Inc.</em> </div>
+                <div class="twoBox"><br> <p>"Working with Maximum was a wonderful experience. Our teams worked together as one. This creates an unique experience for all of us."</p><br></div>
+            </div>
+            <div class="span4">
+                <div class="oneBox"> <img src="~/img/pic2.jpg" alt=""> <strong>Brad Deacon</strong> <em>Amazon</em> </div>
+                <div class="twoBox"><br> <p>"Working with Maximum was a wonderful experience. Our teams worked together as one. This creates an unique experience for all of us."</p><br></div>
+            </div>
+            <div class="span4">
+                <div class="oneBox"> <img src="~/img/pic3.jpg" alt=""> <strong>Jane Smith</strong> <em>Paypal Inc.</em> </div>
+                <div class="twoBox"><br> <p>"Working with Maximum was a wonderful experience. Our teams worked together as one. This creates an unique experience for all of us."</p><br></div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <div id="twitterwrap">
+        <img src="~/img/twitter.png" alt="">
+        <br>
+        <br>
+        <div id="jstwitter" class="clearfix">
+            <ul id="twitter_update_list"></ul>
+        </div>
+        <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script><!-- Script Needed to load the Tweets -->
+        <script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/basicoh_.json?callback=twitterCallback2&count=1"></script>
+    </div>
+    <div id="footerwrap">
+        <em>MADE IN MADRID</em>
+        <br>
+        <br>
+        <p>ST. PATRICK AVE.</p>
+        <p>2099, MADRID</p>
+        <br>
+        <p><a href="#">GET DIRECTIONS</a></p>
+        <br>
+        <div class="social_icons">
+            <a href="#"><img src="~/img/social/white/dribbble.png" width="30" height="30" alt="Dribbble"></a>
+            <a href="#"><img src="~/img/social/white/facebook.png" width="30" height="30" alt="Facebook"></a>
+            <a href="#"><img src="~/img/social/white/gplus.png" width="30" height="30" alt="GooglePlus"></a>
+            <a href="#"><img src="~/img/social/white/instagram.png" width="30" height="30" alt="Instagram"></a>
+            <a href="#"><img src="~/img/social/white/linkedin.png" width="30" height="30" alt="LinkedIn"></a>
+            <a href="#"><img src="~/img/social/white/pinterest.png" width="30" height="30" alt="Pinterest"></a>
+            <a href="#"><img src="~/img/social/white/twitter.png" width="30" height="30" alt="Twitter"></a>
+        </div><!-- End of social icons -->
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+
+    </div>
+    <script type="text/javascript" src="~/js/jquery.js"></script>
+    <script type="text/javascript" src="~/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="~/js/onepage/js/main.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.js"></script>
 </body>
 </html>
