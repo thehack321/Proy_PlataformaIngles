@@ -1,0 +1,85 @@
+/*!
+ * MAXIMUM - All in One Theme
+ *
+ * Copyright 2013 
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Created by: Carlos Alvarez
+ * URL: http://www.basicoh.com
+ * Designed and built based on Twitter Bootstrap.
+ * Tags: all in one, agency theme, one page, single page, responsive, green, flat */
+ 
+
+body{
+	background: url(../img/bg2.jpg) no-repeat center top; 
+	height:100%;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	color:#fff;
+}
+
+h5 {
+	font-family:'Open Sans Condensed', sans-serif;
+	font-size:30px;
+	color:#fff;
+	text-align:center;
+	line-height:32px;
+}
+
+
+select, textarea, input[type=text], input[type=password], input[type=datetime], input[type=username], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], .uneditable-input {
+  display: inline-block;
+  height: 36px;
+  padding: 4px 6px;
+  margin-bottom: 9px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #9e9d9d;
+  width:230px;
+}
+
+/* ---- Countdown timer ---- */
+		.Counter {
+			width:400px;
+			/*position:absoulute;*/
+			/*overflow:auto;*/
+			/*clear:both;*/
+		}
+		ul#countdown li {
+			display : inline-block;
+			width : 70px;
+			margin-bottom : 10px;
+			text-align : center;
+			padding-right : 20px;
+			
+		}
+		ul#countdown li span {
+			font-size : 3.2em;
+			font-weight : bold;
+			color : #ffffff;
+			height : 60px;
+			line-height : 60px;
+			
+			
+		}
+		ul#countdown li p.timeRefDays, ul#countdown li p.timeRefHours, ul#countdown li p.timeRefMinutes, ul#countdown li p.timeRefSeconds {
+			margin-top : 10px;
+			color : #ffffff;
+			text-transform : uppercase;
+			font : 80% 'Open Sans', sans-serif;
+			font-weight : bold;
+			
+			
+		}
+
+
+
+/*FORM ERROR MESSAGE*/
+.error{ color:#b2c831;}
+
+@media (max-width: 979px) {
+  .navbar-fixed-top {
+    margin-bottom: 0px;
+  }
+}

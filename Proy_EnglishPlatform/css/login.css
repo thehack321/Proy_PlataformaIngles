@@ -1,0 +1,145 @@
+/*!
+ * MAXIMUM - All in One Theme
+ *
+ * Copyright 2013 
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Created by: Carlos Alvarez
+ * URL: http://www.basicoh.com
+ * Designed and built based on Twitter Bootstrap.
+ * Tags: all in one, agency theme, one page, single page, responsive, green, flat */
+
+
+body 				{ 
+	background:#3bc492;
+	color: #565656;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+/* theme form */
+label.error{
+	margin-top:10px;
+	display:block;
+}
+textarea, input { outline: none; }
+.sign-up-form{
+	margin-top:20px;
+	margin-bottom:120px;
+	position:relative;
+}
+.sign-up-form label.error{
+	position:absolute;
+	left:50%;
+	width:180px;
+	text-align:center;
+	color:#fc1c1c;
+	font-weight:bold;
+	top:38px;
+}
+.sign-up-form .watermark{
+	left:10px;
+}
+.theme-form input[type=email], .theme-form input[type=text], #commentform textarea{
+	background:#fff;
+	border:none;
+	padding:20px 20px;
+	height:30px;
+	width:230px;
+	color:#7f7f7f;
+	font-size:26px;
+	vertical-align: middle;
+	margin:0px;
+	font-family: "Open Sans Condensed", sans-serif;
+}
+.theme-form-white input[type=text]{
+	background:#fafafa;
+	border:1px solid #d4d4d4;
+	padding:20px 20px;
+	margin-bottom:30px;
+	margin-top:5px;
+}
+.sign-up-form-fixed input[type=email]{
+	padding:10px;
+	background:#fff;
+	width: 170px;
+}
+.sign-up-form-fixed label.error{
+	display:none!important;
+}
+.sign-up-form-fixed input[type=submit]{
+	background:#333;
+	border:none;
+	position:relative;
+	left:-5px;
+	height:40px;
+	width: 100px;
+	font-size:19px;
+	margin:0px;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-weight:700;
+	color:#fff;
+}
+.sign-up-form-fixed .watermark_container .watermark {
+	top:-11px!important;
+}
+.theme-form.sign-up-form input[type=submit]{
+	background:#3bc492;
+	border:none;
+	position:relative;
+	left:-5px;
+	height:60px;
+	width:180px;
+	font-size:19px;
+	margin:0px;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-weight:700;
+	color:#fff;
+	padding-right:20px;
+}
+.theme-form input[type=submit]:hover{
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	-ms-transition: background-color 200ms linear;
+	transition: background-color 200ms linear;
+	cursor:pointer;
+}
+.sign-up-form-fixed input[type=submit]:hover{
+	background:#111;
+}
+.theme-form#commentform input[type=email], .theme-form#commentform input[type=text], #commentform textarea{
+	background:#eee;
+	margin-bottom:10px;
+}
+ #commentform textarea{
+	height:80px;
+}
+.watermark_container{
+	display:inline!important;
+}
+.watermark_container .watermark{
+	top:-22px!important;
+}
+#commentform .watermark_container .watermark{
+	top:-52px!important;
+}
+#form-section-comment .watermark_container .watermark{
+	top:-92px!important;
+}
+.comments-textarea .watermark_container .watermark{
+	top:-62px!important;
+}
+
+.loginbox {
+	margin-top:80px;
+	padding-top:40px;
+	background:#ecf0f1;
+}
+
+.loginbox p {
+	color:#bfc5ca;
+	font-weight:700;
+	font-size:12px;
+}

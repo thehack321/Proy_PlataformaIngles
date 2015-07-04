@@ -1,0 +1,39 @@
+/*!
+ * MAXIMUM - All in One Theme
+ *
+ * Copyright 2013 
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Created by: Carlos Alvarez
+ * URL: http://www.basicoh.com
+ * Designed and built based on Twitter Bootstrap.
+ * Tags: all in one, agency theme, one page, single page, responsive, green, flat */
+ 
+ /*///404 Conf///*/
+
+
+body 				{ 
+	background:#f2f2f2;
+	color: #565656;
+	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+h1 {
+	color:#565656;
+	font-size:60px;
+	font-family:'Open Sans Condensed', sans-serif;
+	font-weight:bold
+}
+
+h3 {
+	color:#565656;
+	font-size:30px;
+	font-weight:300
+}
+
+p {
+	color:#565656;
+	font-size:18px;
+}

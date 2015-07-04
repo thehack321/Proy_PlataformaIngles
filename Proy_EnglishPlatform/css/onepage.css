@@ -1,0 +1,267 @@
+/*!
+ * MAXIMUM - All in One Theme
+ *
+ * Copyright 2013 
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Created by: Carlos Alvarez
+ * URL: http://www.basicoh.com
+ * Designed and built based on Twitter Bootstrap.
+ * Tags: all in one, agency theme, one page, single page, responsive, green, flat */
+
+
+/* DEFAULT STYLES */
+
+p { margin: 15px 0;
+	font-size:18px;
+ }
+
+.page-title > *, .widget-title > * {
+	background: #3bc492;
+	padding: 8px 30px 12px 28px;
+	display: inline-block;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+}
+.page-title a:hover { color: #fff; text-decoration: none; }
+
+a { outline: none !important; }
+
+.portfolio-items a dt img, #header a, .social-profiles a img, .connect a img, #copyright a img   {
+	-webkit-transition: all 0.15s linear;
+	-moz-transition: all 0.15s linear;
+	-o-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+
+
+
+/* HEADER */
+#header {
+	background: #2f353e;
+	padding: 28px 0 26px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+#header nav ul { float: right; margin: 6px 0 0; }
+#header nav li { list-style-type: none;	float: left; margin-left: 46px; }
+#header a {
+	color: #fff;
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+#header a:hover, #header .current-menu-item a { color: #a5a5a5; text-decoration: none; }
+
+.select-menu { display: none; }
+
+#slider { 
+	overflow: hidden;
+	margin-top:-20px;
+
+ }
+#slider h1 {
+	padding: 0px;
+	background: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: #fff;
+	font-size: 60px;
+	line-height: 65px;
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+	font-weight:bold;
+}
+
+
+
+/* CONTENT */
+body > article { border-bottom: #dfdfdf 1px solid; padding-top: 80px; }
+body > article:first-child { border: none; }
+article.even { background: #fff; }
+
+.page { text-align: center; }
+
+.page-title, .widget-title {
+	text-align: center;
+	padding-bottom: 17px;
+	background: url("../img/onepage/title-arrow.png") center 100% no-repeat;
+}
+.page-title h1 { 
+	min-width: 190px;
+	font-size: 35px;
+ }	
+.page-title h1, .widget-title > * { margin: 0; }
+
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+
+
+/* WIDGETS */
+article .widget-area { border-top: #e9e9e9 1px dashed; margin-top: 67px; }
+
+article .widget-area .widget:first-child { border-left: #e9e9e9 1px dashed; }
+article .widget-area .widget { border-right: #e9e9e9 1px dashed; }
+
+.widget { 
+	font-size: 18px; 
+	line-height: 25px; 
+	}
+
+.widget h3 {
+	font-size:24px;
+}
+
+.widget-teaser { padding-top: 32px; }
+.widget-teaser .widget-title { margin: 30px 0 54px; }
+.widget-teaser img { margin: 0 auto; display: block; }
+.widget-teaser .widget-content { padding: 52px 15px; border-top: #e9e9e9 1px dashed; }
+
+
+.width-33 { width: 33.1%; float: left; }
+
+
+
+/* PORTFOLIO & STAFF */
+.portfolio-items, .staff-items { margin: 76px 0 39px; }
+.portfolio-items dl, .staff-items dl { margin-top: 0; margin-bottom: 39px; }
+.portfolio-items dd, .staff-items dd {
+	margin: 0;
+	background: #fff;
+	text-align: center;
+	font-size: 20px;
+	padding: 16px 0 17px;
+	box-shadow: 0 1px 1px #e4e4e4;
+}
+.portfolio-items a, .staff-items a { color: #8f8f8f; }
+.portfolio-items dt img, .staff-items dt img { width: 100%; opacity: 1; }
+.portfolio-items a:hover dt img { opacity: 0.7; }
+.staff-items dd { padding: 18px 0 16px; font-size: 17px; color: #ccc9ba; }
+.staff-items dd h3 { margin: 0; color: #666; }
+.staff-items p { margin-top: 4px; margin-bottom: 19px; }
+
+.social-profiles {
+	overflow: hidden;
+	text-align: center;
+	padding: 13px 0 0;
+	margin-bottom: 0;
+	border-top: #e0e0e0 1px dashed;
+}
+.social-profiles li { list-style-type: none; display: inline-block; margin: 0 6px; }
+.social-profiles a:hover img { opacity: 0.7; }
+
+.connect { overflow: hidden; margin: 82px 0 75px; padding: 0; }
+.connect img {
+	margin:20px;
+}
+.connect a:hover img { opacity: 0.7; }
+
+.client-items { margin: 78px 0 23px; }
+.client-items img { display: block; margin: 0 auto 55px; }
+
+
+
+/* CONTACT */
+
+.map {
+	margin-top:0px;
+}
+
+.address { text-align: left; font-size: 18px; line-height: 25px; }
+.address p { margin: 25px 0; }
+.address form { margin: 30px 0 70px; }
+
+input[type=submit] {
+	font-size: 30px;
+	background: #3bc492;
+	color: #fff;
+	font-weight:300;
+	border: none;
+	padding: 15px 38px 18px 36px;
+	
+}
+input[type=text], textarea {
+	background: #f3f3ef;
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	border: none;
+	box-shadow: none;
+	height: 60px;
+	line-height: 58px;
+	padding: 0;
+	text-indent: 18px;
+	margin: 0 0 18px;
+}
+textarea {
+	line-height: 24px;
+	padding: 18px;
+	width: 100%;
+	text-indent: 0;	
+}
+.textarea-container { margin: 0 18px; }
+.textarea-container textarea { margin-left: -18px; }
+#contact textarea { width: 100%; height: 100px; }
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	#slider h1 { font-size: 42px; line-height: 48px; top: 34px; }
+	.flex-control-nav { bottom: 36px; }
+	
+	#simplemodal-overlay, #simplemodal-container { display: none !important; }
+	
+	#contact textarea { width: 254px; }
+}
+@media (max-width: 767px) {
+	body { padding: 0; }
+
+	#header { positioN: relative; }
+
+	.container { margin: 0 20px; }
+
+	.select-menu {
+		display: block;
+		margin-top: 12px;
+		width: 100%;
+		padding: 1px 0 0;
+	}
+
+	#slider h1 {
+		font-size: 26px;
+		line-height: 30px;
+		top: 36px;
+		margin: 0;
+	}
+	
+	article .widget-area { margin: 40px 0 30px; }
+	.widget-teaser .widget-title { margin-top: 16px; }
+	article .widget, .widget-teaser .widget-content, article .widget-area { border: none !important; }
+	
+	.width-33 { width: 100%; }
+	
+	.widget-teaser .widget-title { margin-bottom: 20px; }
+	.widget-teaser .widget-content { border-bottom: #e9e9e9 1px dashed; border-top: none; padding-top: 0; }
+
+	#contact textarea { max-width: 100%; }
+
+	.connect { text-align: center; }
+
+	#header nav { display: none; }
+	
+}
+
+@media (max-width: 480px) {
+	#slider h1 { font-size: 16px; line-height: 20px; top: 16px; }
+}

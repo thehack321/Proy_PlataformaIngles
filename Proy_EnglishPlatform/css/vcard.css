@@ -1,0 +1,423 @@
+/*!
+ * MAXIMUM - All in One Theme
+ *
+ * Copyright 2013 
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * Created by: Carlos Alvarez
+ * URL: http://www.basicoh.com
+ * Designed and built based on Twitter Bootstrap.
+ * Tags: all in one, agency theme, one page, single page, responsive, green, flat */
+
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	font-size:100%;
+	height: 100% !important;
+}
+
+.active{color:black;}
+
+.fullnavigation{
+	height: 100%;
+	width:200px;
+	background-color: #3bc492;
+	position: fixed;
+	right: -200px;
+	top:0px;
+	z-index: 900;
+}
+
+.fullnavigation ul{
+	list-style: none;
+	margin-top: 2em;
+}
+
+.fullnavigation ul li{
+	background-color: #3bc492;
+	text-align: center;
+	border-bottom: 1px solid #5fc19d;
+}
+
+.fullnavigation ul li a{
+	color: white;
+	text-decoration: none;
+	font-family: 'lato', sans-serif;
+	font-weight: 300;
+	display: block;
+	width: 200px;
+	padding: 2em;
+	-webkit-text-stroke: 0.30px
+	}
+	
+.fullnavigation ul li a:before{
+		content: attr(data-icon);
+		font-family: eicons;
+		float: left;
+		font-style: normal;
+		font-size:1.5em;
+}
+
+.fullnavigation ul li a:hover{
+	background-color: #26bd86;
+}
+
+.infoonnav{ color: white; font-size: 0.8em; text-align: left; padding: 1.5em; font-family: 'Open Sans', sans-serif; font-weight: 100;}
+
+.header , .errorbody{
+	width:100%;
+	height: 100%;
+	background-image: url(../img/vcard/background1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #242424;
+	float: left;
+	overflow: hidden;
+	margin-top:-20px;
+}
+
+.closenav{width:40px; position: absolute; left: -40px; top:85px; cursor: pointer; z-index: 300;}
+
+
+.sectionheader{
+	color:#ababab;
+	max-width: 140px;
+	position: relative;
+	top:2em;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 0.3em;
+	font-size: 36px;
+	text-align: center;
+	display: block;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.headcontent{
+	max-width: 1100px;
+	height:100%;
+	margin:0 auto;
+	display: block;
+	padding: 1em;
+	overflow: hidden;
+	padding-top:-40px;
+}
+
+.headnav{
+	width: 100%;
+	overflow: hidden;
+}
+
+.logo{max-width:260px; float: left;}
+.navi{ position: fixed; z-index: 9999; top:7.5%; right: 14%; cursor: pointer; color: #3bc492;; font-family:'Open Sans', sans-serif;}
+.navi:before{content: "MENU"; font-family: "Open Sans", sans-serif; color: #3bc492; font-size: 1.5em; font-weight: normal; float: left; padding-right: 0.2em;}
+.menutext{margin-top: -3px; display: block;}
+
+.nav li.active a{color: black;}
+
+.intro{
+	max-width: 1100px; 
+	width: 100%; 
+	padding: 1em;	
+	text-align: center;
+	color: white;
+	margin-top: 18%;
+	line-height:1.8em;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+	
+.intro .lineone{font-size: 40px;}
+.intro .linetwo{font-size: 26px; font-style: italic;}
+
+.about, .portfolio, .contact{
+	width:100%;
+	clear: both;
+}
+
+.about{
+	color: gray;
+}
+
+.pilcrow{color: #3bc492; font-size: 1.1em; display: block; float: right;}
+
+.columnholder{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+	padding-bottom: 0.5em;
+}
+
+
+.alignright{text-align: right;}
+
+.fontdecre{
+	font-size: 0.8em;
+}
+
+.midani:hover{
+	background-position:100% 0%;
+}
+
+.portfolio-banner{
+	width: 100%;
+	background-image: url(../img/vcard/sm.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	overflow: hidden;
+	text-align: center; 
+	font-family: 'Open Sans', sans-serif; 
+	color: #fff; 
+	font-weight: 300;
+	padding: 2.8em 0px 2.8em 0px;
+}
+
+.portfolio-banner p {
+	font-size: 24px; 
+}
+
+.portfolio{
+	overflow: hidden;
+	height: 100%;
+	display: block;
+	background-color: #f3f3f3;
+	position: relative;
+}
+
+.portfoliocontent{
+	max-width:1200px;
+	width: 100%;
+	overflow: hidden;
+	display: block;
+	margin: 0% auto;
+}
+
+.portfoliocontent .contentbox{
+	width: 31.3%;
+	padding: 0em;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	margin: 1%;
+	
+		
+	transition:all 0.6s ease 6s;
+	-webkit-transition:all 0.6s ease 0s;
+	-moz-transition:all 0.6s ease 0s;
+	-o-transition:all 0.6s ease 0s;
+}
+
+.portfoliocontent .contentbox .info{
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	line-height: 1em;
+	padding-top: 20%;
+	position: absolute;
+	top:0%;
+	background-color: #000000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	z-index: 400;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	display: block;
+	opacity: 0;
+	
+	transition:all 0.6s ease 0s;
+	-webkit-transition:all 0.6s ease 0s;
+	-moz-transition:all 0.6s ease 0s;
+	-o-transition:all 0.6s ease 0s;
+}
+
+.info p {
+	font-size:18px;
+}
+
+.portfoliocontent .contentbox:hover .info{
+	opacity: 1;
+}
+
+.portfoliocontent .contentbox img.overlay{
+	position: relative;
+	z-index: 500;
+	width: 100%;
+	margin: 0px auto;
+	display: block;
+	
+	transition:opacity 0.6s ease 0s;
+	-webkit-transition:opacity 0.6s ease 0s;
+	-moz-transition:opacity 0.6s ease 0s;
+	-o-transition:opacity 0.6s ease 0s;
+}
+
+.portfoliocontent .contentbox:hover img.overlay{
+	opacity: 0.2;
+}
+
+
+.highlight{color:#3bc492; font-size: 0.8em; font-weight: 300;}
+.colorhighlight{color:#3bc492;}
+
+.clearfix{ clear: left;}
+
+.contact{
+	background-color:#303133;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+#namebox, #emailbox{
+	position: relative;	
+}
+
+.contact-area {
+	width: 100%;
+	overflow: hidden;
+	color: #F3F3F3;
+}
+
+.contact-area form{overflow: hidden;}
+
+
+.contactnote{
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	padding-bottom: 15px;
+}
+
+
+
+.address { text-align: left; font-size: 18px; line-height: 25px; }
+.address p { margin: 25px 0; }
+.address form { margin: 30px 0 70px; }
+
+input[type=submit] {
+	font-size: 30px;
+	background: #3bc492;
+	color: #fff;
+	font-weight:300;
+	border: none;
+	padding: 15px 38px 18px 36px;
+	
+}
+input[type=text], textarea {
+	background: #f3f3ef;
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	border: none;
+	box-shadow: none;
+	height: 60px;
+	line-height: 58px;
+	padding: 0;
+	text-indent: 18px;
+	margin: 0 0 18px;
+}
+textarea {
+	line-height: 24px;
+	padding: 18px;
+	width: 100%;
+	text-indent: 0;	
+}
+.textarea-container { margin: 0 18px; }
+.textarea-container textarea { margin-left: -18px; }
+#contact textarea { width: 100%; height: 100px; }
+
+
+
+
+@media screen and (max-width:2000px), screen and (max-device-width:2000px){
+	.portfolio, .contact, .about{height: auto;}
+	.columnholder{margin: 12% auto;}
+	.portfoliocontent{margin: 7% auto;}
+}
+
+@media screen and (max-width:1440px), screen and (max-device-width:1400px){
+	.columnholder{margin: 10% auto 11%;}
+	.portfoliocontent{margin: 3.5% auto;}
+}
+
+@media screen and (max-width:1280px), screen and (max-device-width:1280px){
+	.intro{margin-top: 15%;}
+	.columnholder{margin: 8% auto;}
+	
+}
+
+
+@media screen and (max-width:1000px), screen and (max-device-width:1000px){
+	.columnholder{margin: 12% auto;}
+	.portfoliocontent{margin: 6% auto;}
+	.portfoliocontent .contentbox .info{font-size: 1.2em;}
+	.tadbit{font-size: 1.3em;}
+}
+
+@media screen and (max-width:1050px), screen and (max-device-width:1050px){
+	body .header{background-attachment: scroll;}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	#contact textarea { width: 254px; }
+}
+
+@media (max-width: 767px) {
+	#contact textarea { max-width: 100%; }
+}
+
+@media screen and (max-width:600px), screen and (max-device-width:600px){
+	/* header section*/
+	.fullnavigation{height: 100%; width:170px; right: -170px; top:0px; z-index: 900;}
+	.fullnavigation ul{margin-top: 0em;}
+	.fullnavigation ul li a{font-family: 'lato', sans-serif; width: 170px; padding: 1.8em;}
+	
+	.logo{display: none;}
+	.intro{padding: 0em; margin-top: 30%; line-height:1.3em;}
+	.intro .lineone{font-size: 30px;}
+	.intro .linetwo{font-size:18px; font-style: italic;}
+
+	/* about section*/
+	.columnholder{margin: 2% auto;}
+	.alignright{text-align: left;}
+	.pushtop{margin-top: 0em;}
+	.sectionheader{max-width: 600px; top:1em; padding: 0.3em; font-size: 25px; text-align: center;}
+	
+	.tadbit{font-size: 1em;}
+	
+	/*portfolio section*/
+	.portfoliocontent .contentbox{width: 80%; float: none; margin: 4% auto;}
+	
+	/*contact section*/
+	.contactnote{font-size: 1em; padding-bottom: 2em;}	
+	
+}
+
+
+/*@media screen and (max-width:1366px), screen and (max-device-width:1366px){
+	.portfoliocontent{margin: 0% auto;}
+	.columnholder{margin-top: 10%;}
+}
+
+@media screen and (max-width:1200px), screen and (max-device-width:1200px){
+	.portfolio{height: auto; padding-bottom: 1em;}
+	.contact{height: auto;}
+}*/
+
+/*ipad portrait*/
+@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
+	.header{background-attachment: scroll;}
+	.intro{margin-top: 40%;}
+	.portfolio{ height: auto;}
+	.portfoliocontent .contentbox{padding: 2em; width: 32%;}
+	.portfoliocontent .clearfix{clear: none;}
+	.clearfixpad{clear:left;}
+	.columnholder{margin-top: 15%;}
+}
