@@ -26,5 +26,12 @@ namespace Proy_EnglishPlatform.Controllers
 
             return View();
         }
+
+        public ActionResult Paquetes()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }
