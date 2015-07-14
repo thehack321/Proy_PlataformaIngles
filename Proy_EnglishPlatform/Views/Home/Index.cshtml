@@ -1,31 +1,41 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<body>
+    <section id="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="~/img/bg01.jpg" alt="#">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div id="blackwrap">
+        <div class="container">
+            <h1>Tenemos clientes al rededor del mundo</h1>
+            <p>No importa donde te encuentres, tenemos todo lo que necesitas para aprender ingles de una manera rapida y eficaz</p>
+            <img src="~/img/globe.png" alt="">
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <h1>Muchos nos recomiendan</h1>
+    <div class="container">
+        <div class="row">
+            <br>
+            <br>
+            <div class="span4">
+                <div class="oneBox"> <img src="~/img/pic1.jpg" alt=""> <strong>Lisa Taylor</strong> <em>Google Inc.</em> </div>
+                <div class="twoBox"><br> <p>"Working with Maximum was a wonderful experience. Our teams worked together as one. This creates an unique experience for all of us."</p><br></div>
+            </div>
+            <div class="span4">
+                <div class="oneBox"> <img src="~/img/pic2.jpg" alt=""> <strong>Brad Deacon</strong> <em>Amazon</em> </div>
+                <div class="twoBox"><br> <p>"Working with Maximum was a wonderful experience. Our teams worked together as one. This creates an unique experience for all of us."</p><br></div>
+            </div>
+            <div class="span4">
+                <div class="oneBox"> <img src="~/img/pic3.jpg" alt=""> <strong>Jane Smith</strong> <em>Paypal Inc.</em> </div>
+                <div class="twoBox"><br> <p>"Working with Maximum was a wonderful experience. Our teams worked together as one. This creates an unique experience for all of us."</p><br></div>
+            </div>
+        </div>
+        <br>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</body>

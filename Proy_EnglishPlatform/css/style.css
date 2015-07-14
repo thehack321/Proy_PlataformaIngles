@@ -1636,19 +1636,6 @@ input[type=submit] {
 	padding: 15px 38px 18px 36px;
 }
 
-input[type=text], textarea {
-	background: #fff;
-	font-size: 20px;
-	display: block;
-	width: 100%;
-	border: none;
-	box-shadow: none;
-	height: 60px;
-	line-height: 58px;
-	padding: 0;
-	text-indent: 18px;
-	margin: 0 0 18px;
-}
 textarea {
 	line-height: 24px;
 	padding: 18px;
@@ -1713,7 +1700,7 @@ textarea {
   }
   #register-form input {
     display: block;
-    margin: 0 auto;
+    margin:  auto;
   }
   #register-form input.input-huge, #register-form input.input-medium {
     width: auto;

@@ -1,69 +1,152 @@
-﻿@{
+﻿
+@{
     ViewBag.Title = "Paquetes";
 }
 
-<div class="container">
-    <div class="row">
-        <h1>Learn More About Us.</h1>
-        <div class="span8">
-            <h4 class="title-bg"> WHAT IS MAXIMUM?</h4>
-            <p>Maximum is a small studio of web designers, developers, photographers and video experts. We all believe in effective design and are fully dedicated to creating websites that work for you and your customers. That's why we spend time getting to know you and your audience.</p>
-            <p>We feel it's the only way to create websites that effectively communicate your core messages and help you to engage with your users. We're all about quality. We are not IT people, we are humans with a real wish to do good.</p>
-            <h4 class="title-bg"> OUR PROCESS</h4>
-            <div class="row">
-                <div class="span2 middle">
-                    <p><img src="assets/img/service01.png" alt="" width="80" height="80"></p>
-                </div>
-                <div class="span6">
-                    <p><b>DISCOVER:</b> The first stage of the process is to define the exact goals of the project or business. The discovery phase clearly states the problem and contains all of the information needed. Understanding the business properly will allow us to develop a unique solution for you.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="span2 middle">
-                    <p><img src="assets/img/service02.png" alt="" width="80" height="80"></p>
-                </div>
-                <div class="span6">
-                    <p><b>DESIGN:</b> Now we begin to engage the creativity that is required to start developing focused design routes. Core choices about layout, type size and colour palettes are tested within a number of ideas to identify what works best in order to communicate your goals.</p>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="span2 middle">
-                    <p><img src="assets/img/service03.png" alt="" width="80" height="80"></p>
-                </div>
-                <div class="span6">
-                    <p><b>BUILD:</b> Once the design is signed off it is put into development. It is here where a working system that mimics the final design, is built with clean, semantic code that validates according to the W3C Organizations own community developed standards.</p>
-                </div>
-            </div>
+<p class="navi" id="navbtn"> <span class="menutext"></span></p>
+
+<div class="fullnavigation" id="navbar-side">
+    <img src="~/img/vcard/closenav.jpg" alt="" class="closenav" id="closenav">
+    <ul id="nav">
+        <li class="current"> <a href="#home" class="smoothScroll"> Home</a></li>
+        <li> <a href="#about" class="smoothScroll"> About</a></li>
+        <li> <a href="#portfolio" class="smoothScroll"> Portfolio</a></li>
+        <li> <a href="#contact" class="smoothScroll"> Contact</a></li>
+    </ul>
+</div>
+
+<div class="header section" id="home" name="home" data-stellar-background-ratio="0.6">
+    <div class="headcontent">
+        <div class="headnav">
+            <a href="index.html"><img src="~/img/vcard/logo.png" class="logo" alt=""></a>
         </div>
+        <div class="intro">
+            <p>
+                <span class="lineone">Welcome to the Maximum vCard Theme.</span><br>
+                <span class="linetwo">Another option to use your all in one theme.</span>
+            </p>
+        </div><!-- /intro -->
 
-        <div class="span4">
-            <h4 class="title2-bg"> MORE INFO</h4>
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#comments" data-toggle="tab">Comments</a></li>
-                <li><a href="#tweets" data-toggle="tab">Tweets</a></li>
-                <li><a href="#about" data-toggle="tab">About</a></li>
-            </ul>
+    </div><!--/headcontent -->
+</div><!--/header section -->
 
-            <div class="tab-content">
-                <div class="tab-pane active" id="comments">
-                    <p>Incredible service, incredible team and most important, incredible results. We are so happy with Maximum that all what we do is talking about they marvelous work..</p>
+<div class="about section" id="about" name="contact">
+    <div class="aboutcontent">
+        <p class="sectionheader"> About</p>
+        <div class="columnholder container">
+            <div class="row">
+                <div class="pushtop span6">
+                    <p>My name is <span class="colorhighlight"> Marcel Newman</span> and Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div><!-- /span6 -->
+
+
+                <div class="pushtop span6">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div><!-- /span6 -->
+            </div><!-- /row -->
+        </div><!--/columnholder -->
+
+    </div><!--/aboutcontent -->
+</div><!--/about section -->
+
+<div class="portfolio-banner" id="portfolio" name="portfolio">
+    <p>
+        "Beauty is bought by judgement of the eye."<br>
+        - Shakespeare.
+    </p>
+</div><!-- /portfolio-banner -->
+
+<div class="portfolio section" id="portfoliosection" name="portfoliosection">
+    <p class="sectionheader"> Portfolio</p>
+    <div class="portfoliocontent">
+        <div class="contentbox">
+            <div class="imgdisplay">
+                <a href="#">
+                    <img src="~/img/vcard/porfoliothumbs/thumb01.jpg" alt="" class="overlay">
+                </a>
+            </div><!--/imgdisplay -->
+            <div class="info">
+                <p>Portfolio 1 <br> <span class="highlight">Graphic Design</span></p>
+            </div><!--/info -->
+        </div><!--/contentbox -->
+
+        <div class="contentbox">
+            <div class="imgdisplay">
+                <a href="#">
+                    <img src="~/img/vcard/porfoliothumbs/thumb02.jpg" alt="" class="overlay">
+                </a>
+            </div><!--/imgdisplay -->
+            <div class="info">
+                <p class="textinfo">Portfolio 2 <br> <span class="highlight">Web Design</span></p>
+            </div><!--/info -->
+        </div><!--/contentbox -->
+
+        <div class="contentbox">
+            <div class="imgdisplay">
+                <a href="#">
+                    <img src="~/img/vcard/porfoliothumbs/thumb03.jpg" alt="" class="overlay">
+                </a>
+            </div><!--/imgdisplay -->
+            <div class="info">
+                <p>Portfolio 3 <br> <span class="highlight">Web Design</span></p>
+            </div><!--/info -->
+        </div><!--/contentbox -->
+
+        <div class="contentbox">
+            <div class="imgdisplay">
+                <a href="#">
+                    <img src="~/img/vcard/porfoliothumbs/thumb04.jpg" alt="" class="overlay">
+                </a>
+            </div><!--/imgdisplay -->
+            <div class="info">
+                <p>Portfolio 4 <br> <span class="highlight">Development</span></p>
+            </div><!--/info -->
+        </div><!--/contentbox -->
+
+        <div class="contentbox">
+            <div class="imgdisplay">
+                <a href="#">
+                    <img src="~/img/vcard/porfoliothumbs/thumb05.jpg" alt="" class="overlay">
+                </a>
+            </div><!--/imgdisplay -->
+            <div class="info">
+                <p>Portfolio 5 <br> <span class="highlight">Web Design</span></p>
+            </div><!--/info -->
+        </div><!--/contentbox -->
+
+        <div class="contentbox">
+            <div class="imgdisplay">
+                <a href="#">
+                    <img src="~/img/vcard/porfoliothumbs/thumb06.jpg" alt="" class="overlay">
+                </a>
+            </div><!--/imgdisplay -->
+            <div class="info">
+                <p>Portfolio 6 <br> <span class="highlight">Marketing</span></p>
+            </div><!--/info -->
+        </div><!--/contentbox -->
+
+    </div><!--/portfoliocontent -->
+</div><!--/portfolio section -->
+
+<div class="contact section" id="contact" name="contact">
+    <p class="sectionheader"> Contact</p>
+    <div class="contact-area">
+        <p class="contactnote">Leave me a message, I will respond as soon as possible.</p>
+        <div class="address container">
+            <div class="row">
+                <div class="span3"></div>
+                <div class="span6">
+                    <form action="#get-in-touch" method="POST" id="contact">
+                        <input type="text" id="contactname" name="contactname" placeholder="Name">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <div class="textarea-container"><textarea id="message" name="message" placeholder="Message"></textarea></div>
+                        <input type="submit" id="submit" name="submit" value="Send">
+                    </form>
                 </div>
-                <div class="tab-pane" id="about">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie.</p>
-                </div>
+                <div class="span3"></div>
             </div>
-
-            <h4 class="title2-bg">TESTIMONIAL</h4>
-            <div class="oneBox"> <img src="assets/img/pic1.jpg" alt=""> <strong>Lisa Taylor</strong> <em>Google Inc.</em> </div>
-            <div class="twoBox"><br> <p>"Working with Maximum was a wonderful experience. Our teams worked together as one. This creates an unique experience for all of us."</p><br></div>
-
-            <h4 class="title2-bg">OUR STUDIO</h4>
-            <img src="assets/img/studio_small.jpg" alt="">
-
         </div>
     </div>
-    <br>
-    <br>
 </div>

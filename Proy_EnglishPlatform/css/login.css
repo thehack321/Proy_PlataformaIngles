@@ -11,6 +11,7 @@
 
 
 body 				{ 
+    text-align:center;
 	background:#3bc492;
 	color: #565656;
 	font-size: 100%;
@@ -23,7 +24,7 @@ label.error{
 	margin-top:10px;
 	display:block;
 }
-textarea, input { outline: none; }
+
 .sign-up-form{
 	margin-top:20px;
 	margin-bottom:120px;
@@ -41,7 +42,7 @@ textarea, input { outline: none; }
 .sign-up-form .watermark{
 	left:10px;
 }
-.theme-form input[type=email], .theme-form input[type=text], #commentform textarea{
+.theme-form input[type=email], #commentform textarea{
 	background:#fff;
 	border:none;
 	padding:20px 20px;
@@ -53,13 +54,7 @@ textarea, input { outline: none; }
 	margin:0px;
 	font-family: "Open Sans Condensed", sans-serif;
 }
-.theme-form-white input[type=text]{
-	background:#fafafa;
-	border:1px solid #d4d4d4;
-	padding:20px 20px;
-	margin-bottom:30px;
-	margin-top:5px;
-}
+
 .sign-up-form-fixed input[type=email]{
 	padding:10px;
 	background:#fff;
@@ -87,16 +82,15 @@ textarea, input { outline: none; }
 .theme-form.sign-up-form input[type=submit]{
 	background:#3bc492;
 	border:none;
-	position:relative;
+	position:static;
 	left:-5px;
 	height:60px;
 	width:180px;
 	font-size:19px;
-	margin:0px;
 	font-family: "Open Sans Condensed", sans-serif;
 	font-weight:700;
 	color:#fff;
-	padding-right:20px;
+	padding:0;
 }
 .theme-form input[type=submit]:hover{
 	-webkit-transition: background-color 200ms linear;
@@ -109,13 +103,11 @@ textarea, input { outline: none; }
 .sign-up-form-fixed input[type=submit]:hover{
 	background:#111;
 }
-.theme-form#commentform input[type=email], .theme-form#commentform input[type=text], #commentform textarea{
+.theme-form#commentform input[type=email],  #commentform textarea{
 	background:#eee;
 	margin-bottom:10px;
 }
- #commentform textarea{
-	height:80px;
-}
+
 .watermark_container{
 	display:inline!important;
 }

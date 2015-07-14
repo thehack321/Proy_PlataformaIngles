@@ -169,8 +169,6 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="css\404.css" />
     <Content Include="css\animate-custom.css" />
     <Content Include="css\bootstrap-responsive.css" />
@@ -188,7 +186,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="img\404.png" />
     <Content Include="img\aboutus.png" />
     <Content Include="img\bg01.jpg" />
@@ -385,9 +382,11 @@
     <Content Include="Views\Account\Manage.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Paquetes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
     <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>
