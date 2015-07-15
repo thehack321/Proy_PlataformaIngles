@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlumnoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -383,6 +384,7 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Paquetes.cshtml" />
+    <Content Include="Views\Alumno\RegistrarAlu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -395,6 +397,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio.Core.Entities\Dominio.Core.Entities.csproj">
+      <Project>{a7de47df-fcc0-4827-ae80-6a9557fe438b}</Project>
+      <Name>Dominio.Core.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domino.MainModule\Domino.MainModule.csproj">
+      <Project>{bc1dddab-c446-4646-b43d-dade5a4957e4}</Project>
+      <Name>Domino.MainModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructura.Data.SQLServer\Infraestructura.Data.SQLServer.csproj">
+      <Project>{a8436766-a6be-4336-b5be-af2c319d1e0d}</Project>
+      <Name>Infraestructura.Data.SQLServer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
