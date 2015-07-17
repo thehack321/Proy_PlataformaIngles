@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
 using Dominio.Core.Entities;
 using Dominio.MainModule;
 
@@ -11,7 +10,8 @@ namespace Proy_EnglishPlatform.Controllers
 {
     public class AlumnoController : Controller
     {
-        
+        //
+        // GET: /Alumno/
         public ActionResult Index()
         {
             return View();
@@ -31,6 +31,7 @@ namespace Proy_EnglishPlatform.Controllers
             {
                 Response.Cookies["NombreUsuario"].Expires = DateTime.Now.AddDays(-1);
             }
+
             return View();
         }
 
@@ -68,9 +69,9 @@ namespace Proy_EnglishPlatform.Controllers
 
         public ActionResult RegistrarAlu()
         {
+
             return View();
         }
-
         [HttpPost]
         public ActionResult RegistrarAlu(Alumno obj)
         {
