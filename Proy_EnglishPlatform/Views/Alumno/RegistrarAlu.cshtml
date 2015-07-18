@@ -21,7 +21,7 @@
 @using (Html.BeginForm())
 {
 <body>
-    <div class=" container">
+    <div class="container">
         <div class="row">
             <div class="span3"></div>
             <div class="span6 middle">
@@ -30,18 +30,11 @@
                         <h2>Registro de Usuario</h2>
                         <div class="body">
                             @Html.ValidationSummary(true)
-                            <div class="form-group">
-                                @Html.LabelFor(model => model.CodUsu, new { @class = "control-label col-md-2" })
-                                <div class="col-md-10">
-                                    @Html.EditorFor(model => model.CodUsu)
-                                    @Html.ValidationMessageFor(model => model.CodUsu)
-                                </div>
-                            </div>
 
                             <div class="form-group">
                                 @Html.LabelFor(model => model.NombreUsu, new { @class = "control-label col-md-2" })
                                 <div class="col-md-10">
-                                    @Html.EditorFor(model => model.NombreUsu)
+                                    @Html.TextBox("NombreUsu")
                                     @Html.ValidationMessageFor(model => model.NombreUsu)
                                 </div>
                             </div>
@@ -49,7 +42,7 @@
                             <div class="form-group">
                                 @Html.LabelFor(model => model.ApellidoUsu, new { @class = "control-label col-md-2" })
                                 <div class="col-md-10">
-                                    @Html.EditorFor(model => model.ApellidoUsu)
+                                    @Html.TextBox("ApellidoUsu")
                                     @Html.ValidationMessageFor(model => model.ApellidoUsu)
                                 </div>
                             </div>
@@ -57,7 +50,7 @@
                             <div class="form-group">
                                 @Html.LabelFor(model => model.CorreoUsu, new { @class = "control-label col-md-2" })
                                 <div class="col-md-10">
-                                    @Html.EditorFor(model => model.CorreoUsu)
+                                    @Html.TextBox("CorreoUsu")
                                     @Html.ValidationMessageFor(model => model.CorreoUsu)
                                 </div>
                             </div>
@@ -65,14 +58,13 @@
                             <div class="form-group">
                                 @Html.LabelFor(model => model.PwdUsu, new { @class = "control-label col-md-2" })
                                 <div class="col-md-10">
-                                    @Html.EditorFor(model => model.PwdUsu)
+                                    @Html.Password("PwdUsu")
                                     @Html.ValidationMessageFor(model => model.PwdUsu)
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <div class="col-md-offset-2 col-md-10">
-                                    <input type="submit" value="Create" class="btn btn-default" />
+                                    <input type="submit" value="Registrar" class="btn btn-default" />
                                 </div>
                             </div>
                         </div>

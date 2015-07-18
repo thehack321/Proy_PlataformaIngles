@@ -71,7 +71,13 @@ body 				{
  }
 /*---------- BOOTSTRAP MODIFICATIONS ----------*/
 
-input[type=text], input[type=submit], textarea {
+input[type=text]{
+    height:10px;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+input[type=submit], textarea {
 	width: 100%;
 	padding: 0.5em;
 	font-size: 1em;

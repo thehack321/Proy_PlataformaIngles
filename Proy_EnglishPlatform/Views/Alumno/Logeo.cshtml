@@ -1,0 +1,70 @@
+﻿@model Dominio.Core.Entities.Alumno
+
+@{
+    ViewBag.Title = "Logeo";
+}
+
+<head>
+    <link href="~/css/login.css" rel="stylesheet">
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/js/login/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/login/jquery.validate.js"></script>
+    <script type="text/javascript" src="assets/js/login/jquery.watermark.min.js"></script>
+    <script type="text/javascript" src="assets/js/login/login.js"></script>
+</head>
+@using (Html.BeginForm())
+{
+    <body>
+        <div class=" container">
+            <div class="row">
+                <div class="span4"></div>
+                <div class="span4 middle">
+                    <div class="loginbox">
+                        <h2>Ingresar</h2>
+                        <form action="#" method="post" id="subForm" class="theme-form sign-up-form">
+                            <label for="name">Usuario</label>
+                            <div class="col-md-10">@Html.TextBox("strusuario")</div>
+
+                            <label for="name">Contraseña</label>
+                            <div class="col-md-10">@Html.Password("strpassword")</div>
+                            <input value="procesar" type="submit" onclick="Validar()" />
+                                    <p>@Html.ActionLink("Registrarce", "RegistrarAlu")</p>
+                            <div class="span4"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+<script type="text/javascript">
+
+    function Validar() {
+
+        var usuario = $("#strusuario").val();
+        var password = $("#strpassword").val();
+
+        if (usuario == '') {
+            alert('Indique el usuario');
+            $("#strusuario").focus();
+            return false;
+        }
+
+        if (password == '') {
+            alert('Indique el password');
+            $("#strpassword").focus();
+            return false;
+        }
+        return true;
+    }
+
+</script>

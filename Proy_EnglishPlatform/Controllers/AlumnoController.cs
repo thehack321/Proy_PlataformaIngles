@@ -17,7 +17,7 @@ namespace Proy_EnglishPlatform.Controllers
             return View();
         }
 
-        public ActionResult Validar()
+        public ActionResult Logeo()
         {
             //preguntamos por las cookies
             //request --preguntas al servidor---si existe la cook 
@@ -36,7 +36,7 @@ namespace Proy_EnglishPlatform.Controllers
         }
 
         [HttpPost]
-        public ActionResult Validar(string strusuario, string strpassword)
+        public ActionResult Logeo(string strusuario, string strpassword)
         {
 
             IEnumerable<Alumno> objeto = null;
@@ -83,7 +83,7 @@ namespace Proy_EnglishPlatform.Controllers
                 manager.RegistrarAlumno(obj);
 
                 //refrescar la data
-                return RedirectToAction("ListaAlumno");
+                return RedirectToAction("RegistrarAlu");
 
             }
             else
